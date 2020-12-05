@@ -1,0 +1,44 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .slider {
+  width: 700px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.container .slider .slide {
+  width: 700px;
+  height: 500px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .slider .slide img {
+  width: 700px;
+  height: 500px;
+}
+
+.container .left, .container .right {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+/*# sourceMappingURL=style.css.map */
