@@ -8,27 +8,27 @@ function matrix(curR, curC, r0, c0) {
     let curentC = curC
     let r = r0
     let c = c0
-    let prohod = 1
+    let value = 1
     let arr = []
     while (curentR * curentC > arr.length) {
-        for (let i = 0; i < prohod; i++) { //left			
+        for (let i = 0; i < value; i++) { //left			
             arrPush(r, c, arr)
             c++
         }
-        for (let i = 0; i < prohod; i++) { //bot							
+        for (let i = 0; i < value; i++) { //bot							
             arrPush(r, c, arr)
             r++
         }
-        prohod++
-        for (let i = 0; i < prohod; i++) { //right			
+        value++
+        for (let i = 0; i < value; i++) { //right			
             arrPush(r, c, arr)
             c--
         }
-        for (let i = 0; i < prohod; i++) { //top							
+        for (let i = 0; i < value; i++) { //top							
             arrPush(r, c, arr)
             r--
         }
-        prohod++
+        value++
     }
     return arr
 }
